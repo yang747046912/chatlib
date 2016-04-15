@@ -31,12 +31,20 @@ public class Nature {
             Emojicon.fromCodePoint(0x1f42f),
             Emojicon.fromCodePoint(0x1f428),
             Emojicon.fromCodePoint(0x1f43b),
-            Emojicon.fromCodePoint(0x1f437),
+            Emojicon.fromCodFASF ASePoint(0x1f437),
             Emojicon.fromCodePoint(0x1f43d),
-            Emojicon.fromCodePoint(0x1f42e),
+            Emojicon.fromCodePoifsf sFASnt(0x1f42e),
             Emojicon.fromCodePoint(0x1f417),
             Emojicon.fromCodePoint(0x1f435),
-            Emojicon.fromCodePoint(0x1f412),
+                 
+
+
+
+
+
+
+
+ Emojicon.fromCodePoint(0x1f412),
             Emojicon.fromCodePoint(0x1f434),
             Emojicon.fromCodePoint(0x1f411),
             Emojicon.fromCodePoint(0x1f418),
