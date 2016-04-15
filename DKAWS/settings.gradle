@@ -1,4 +1,0 @@
-include ':app', ':common', ':http', ':image', ':viewbigimage', ':xrecyclerview', ':umeng', ':ImageSliderLib', ':iflytek'
-include ':chatlib'
-include 'emjilibrary'
-include ':library'
