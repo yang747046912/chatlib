@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="notitle_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="common_mProgress_circle">
+        <item name="android:indeterminateDuration">900</item>
+        <item name="android:indeterminateDrawable">@drawable/common_progress_cirle</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxWidth">60dp</item>
+        <item name="android:maxHeight">60dp</item>
+    </style>
+    <style name="line">
+        <item name="android:background">@color/line</item>
+    </style>
+
+    <style name="horizontal_line" parent="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2px</item>
+    </style>
+
+    <style name="vertical_line" parent="line">
+        <item name="android:layout_width">2px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+
+                tools:context="wyqj.cancerprevent.doctorversion.fragment.consultation.Consultation">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <RadioGroup
+
+            android:id="@+id/rg_group"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:checkedButton="@+id/rbtn_applying"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbtn_applying"
+                style="@style/main_tab_bottom"
+                android:text="申请中"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/rbtn_to_be_call"
+                style="@style/main_tab_bottom"
+                android:text="待通话"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/rbtn_complete"
+                style="@style/main_tab_bottom"
+                android:text="已完成"
+                android:textSize="16sp"/>
+        </RadioGroup>
+
+
+        <com.kaws.lib.common.widget.UnderlinePageIndicator
+            android:id="@+id/indicator"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/line"
+            app:fadeDelay="1000"
+            app:fadeLength="1000"
+            app:fades="false"
+            app:selectedColor="@color/theme_color"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <com.kaws.lib.common.widget.BlankView
+        android:id="@+id/blank"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:buttonBackGround="@drawable/shape_confirm"
+        app:showButton="true"
+        app:text="此服务需要认证通过\n后才可以开启使用"/>
+</RelativeLayout>

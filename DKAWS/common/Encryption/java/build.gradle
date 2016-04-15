@@ -1,0 +1,40 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.5
+version = '1.0'
+archivesBaseName = "encryption"
+//jar {
+//    manifest {
+//        attributes 'Implementation-Title': 'Gradle Quickstart',
+//                   'Implementation-Version': version,
+//                'Implementation-Name':"encryption"
+//    }
+//}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
+
+test {
+    systemProperties 'property': 'value'
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}
+
+task compileEncryption(type:Copy,dependsOn:uploadArchives) {
+    description 'copy encryption to libs'
+    from 'repos'
+    into '../../libs'
+    include archivesBaseName+'-'+version+'.jar'
+}

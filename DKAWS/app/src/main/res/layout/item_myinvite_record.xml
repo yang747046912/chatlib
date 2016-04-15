@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_invite_record_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="黄生"
+            android:textColor="@color/tip_color"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_invite_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="2015-09-26"
+            android:textColor="@color/tip_color"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_invite_record_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="34"
+            android:textColor="@color/money_color"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line"/>
+</LinearLayout>

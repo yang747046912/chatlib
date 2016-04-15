@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/choose_hospital"
+        layout="@layout/headview_patientlist"/>
+
+    <View
+        android:id="@+id/view_choosehospital_cutline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_choose_hospital"
+        android:background="#e2e2e2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_choosehospital_cutline"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/ll_choosehospital_city"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#fcfcfc"
+            android:choiceMode="singleChoice"
+            android:divider="@color/cutline"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="true"
+            android:scrollbars="none"/>
+
+        <View
+            style="@style/vertical_line"/>
+
+        <ListView
+            android:id="@+id/ll_choosehospital_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#f9f9f8"
+            android:divider="@color/cutline"
+            android:dividerHeight="1px"
+            android:focusable="true"
+            android:footerDividersEnabled="true"
+            />
+
+    </LinearLayout>
+</LinearLayout>

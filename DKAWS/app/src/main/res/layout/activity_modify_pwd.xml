@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:orientation="vertical"
+              tools:context="wyqj.cancerprevent.doctorversion.activity.mine.ModifyPwdActivity">
+    <EditText
+        android:id="@+id/et_modifypwd_first"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="15sp"
+        android:background="@color/white"
+        android:hint="请输入原来的密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="17dp"
+        android:textColorHint="@color/txt_hint"/>
+
+
+    <EditText
+        android:id="@+id/et_modifypwd_second"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="15sp"
+        android:background="@color/white"
+        android:hint="请输入6-16位新密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="17dp"
+        android:textColorHint="@color/txt_hint"/>
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_marginLeft="17dp"/>
+
+    <EditText
+        android:id="@+id/et_modifypwd_secondtwo"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:hint="请确认输入的新密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="17dp"
+        android:textColorHint="@color/txt_hint"/>
+
+
+    <Button
+        android:id="@+id/btn_modify_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_confirm"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
+
+</LinearLayout>
+

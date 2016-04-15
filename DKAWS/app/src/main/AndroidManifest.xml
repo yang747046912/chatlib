@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wyqj.cancerprevent.doctorversion">
+
+    <!-- 极光推送 -->
+    <permission
+        android:name="wyqj.cancerprevent.doctorversion.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="wyqj.cancerprevent.doctorversion.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- Required -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".activity.common.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.common.CanerLogo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.LoginAndRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.square.QuestionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kaws.lib.bigimage.ViewBigImageActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.square.ReplyPatientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.AgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.ChooseGradeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.CompleteInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.common.ChooseHospitalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.KindOfDiseaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.PerIntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.NotFindHospitalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.ModifyPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.InfoNoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.RecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.AdviceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.mine.CommonQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.InviteFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.MyErweimaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.MyIncomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.MyIncomeOrWithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.MyInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.SelectPhoto"
+            android:screenOrientation="portrait"
+            android:theme="@style/select_phptp_activity" />
+        <activity
+            android:name=".activity.common.UploadWorkPicDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.UploadWorkPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.OtherCheckWayActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.common.RegisterSuccessActivity" />
+        <activity android:name=".activity.common.UploadSuccessActivity" />
+
+        <!-- 友盟分享 -->
+
+
+        <!-- 微信分享的回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+        <!-- ###################添加UmengAppkey###################### -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="559f860367e58e3ddf003dd0" />
+        <!-- 友盟分享 -->
+        <!-- 极光推送 -->
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="${applicationId}" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="8d01a8837d7ddaf78fa3aa2f" />
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- 极光推送 -->
+
+
+        <!-- 环信 -->
+        <!-- 环信开机自启动服务 -->
+        <receiver android:name="com.easemob.chat.StartServiceReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="09606999-2#kaws" />
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <activity
+            android:name=".activity.chat.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 环信 -->
+        <activity
+            android:name=".activity.patient.ApplyDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme" />
+        <activity
+            android:name=".activity.mine.MyInfoNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.MyInfoDepartmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.MyInviteRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.MyInfoGradeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustNothing" />
+        <activity
+            android:name=".activity.mine.ApplyWithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.AddBankCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.SelectBankCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.square.NewIllNoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.square.IllNoteOthersTimelineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mobileconsult.AppointDetainActivity"
+            android:screenOrientation="portrait" />
+        >
+        <activity
+            android:name=".activity.common.FindPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mobileconsult.RefuseDiagnoseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mobileconsult.NeedPerfectInformationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name=".activity.mobileconsult.CustomerServiceMessageActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.mobileconsult.AppointSettingActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.NotificationCenterActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.mobileconsult.AddTimeActivity"
+            android:screenOrientation="portrait" />
+
+
+    </application>
+
+</manifest>

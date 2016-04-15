@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#f2f4f1"/>
+
+        <View
+            style="@style/horizontal_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_detail_touxiang"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/iv_detail_touxiang"
+                android:text="姓名"
+                android:textColor="@color/main_content"
+                android:textSize="15sp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_detail_headpic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/questiondetail_kindques"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_detail_headpic"
+                    android:text="肝癌"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="2"
+            android:text="这是标题这是标题这是标题这是标题这是标题这是标题"
+            android:textColor="@color/text_common"
+            android:textSize="19sp"/>
+
+        <TextView
+            android:id="@+id/tv_detail_contain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="5dp"
+            android:text="这是内容这是内容这是内容这是内容这是内容"
+            android:textColor="@color/tip_color"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_detail_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_pic"
+                android:visibility="gone"
+                />
+
+            <com.kaws.lib.common.widget.MyGridView
+                android:id="@+id/gv_detail_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:horizontalSpacing="4dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="4dp"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal_line"/>
+    </LinearLayout>
+</RelativeLayout>

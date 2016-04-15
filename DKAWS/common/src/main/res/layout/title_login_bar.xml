@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#f8f8f8">
+
+    <ImageView
+        android:id="@+id/btn_titlebar_back"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/v3_ic_back"
+        android:textColor="@drawable/text_white_gary" />
+
+    <TextView
+        android:id="@+id/tv_titlebar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#585858"
+        android:textSize="20sp" />
+    <!--选择布局-->
+
+
+    <RadioGroup
+        android:id="@+id/select_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_select"
+        android:checkedButton="@+id/rb_left"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb_left"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_radio_title"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/selector_radio_titlecolor"
+            android:textSize="17sp" />
+
+
+        <RadioButton
+            android:id="@+id/rb_middle"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_radio_title"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/selector_radio_titlecolor"
+            android:textSize="17sp" />
+
+
+        <RadioButton
+            android:id="@+id/rb_right"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_radio_title"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/selector_radio_titlecolor"
+            android:textSize="17sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_titlebar_righttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:text="没找到？"
+        android:textColor="@color/but_bg"
+        android:textSize="17sp"
+        android:visibility="gone" />
+    <!--右边图标-->
+    <ImageView
+        android:id="@+id/iv_titlebar_rightpic"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/mine_erweima"
+        android:visibility="gone" />
+
+    <!--我的 消息中心图标-->
+    <RelativeLayout
+        android:id="@+id/rl_mine_notification_center"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/mine_notification_center" />
+
+        <ImageView
+            android:id="@+id/tv_mine_notification_red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@drawable/mine_notification_red_point" />
+    </RelativeLayout>
+
+    <!--右边图标,二维码下载-->
+    <ImageView
+        android:id="@+id/iv_titlebar_download"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/mine_erweima_download"
+        android:visibility="gone" />
+    <!--反馈界面的提交按钮-->
+    <Button
+        android:id="@+id/btn_titlebar_submit"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_confirm"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_confirm"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_titlebar_topline"
+        style="@style/horizontal_line"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

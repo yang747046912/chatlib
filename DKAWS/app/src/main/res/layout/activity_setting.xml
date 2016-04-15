@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:orientation="vertical"
+              tools:context="wyqj.cancerprevent.doctorversion.activity.mine.SettingActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_pushsetting"
+        style="@style/setting_item"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/txt_setting_pushsetting"
+            style="@style/myinfo_text"
+            android:text="消息通知"/>
+
+        <ImageView
+            style="@style/setting_rightimage"
+            android:src="@drawable/icon_mine_arrow"/>
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_modifypwd"
+        style="@style/setting_item">
+
+        <TextView
+            android:id="@+id/txt_setting_modifypwd"
+            style="@style/myinfo_text"
+            android:text="修改密码"/>
+
+        <ImageView
+            style="@style/setting_rightimage"
+            android:src="@drawable/icon_mine_arrow"/>
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_cache"
+        style="@style/setting_item">
+
+        <TextView
+            style="@style/myinfo_text"
+            android:text="清除缓存"/>
+
+        <TextView
+            android:id="@+id/tv_myinfo_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@+id/iv_setting_cache_rightarrow"
+            android:text="----"
+            android:textColor="@color/tip_color"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_setting_cache_rightarrow"
+            style="@style/setting_rightimage"
+            android:src="@drawable/icon_mine_arrow"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_contact"
+        style="@style/setting_item"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/txt_setting_contact"
+            style="@style/myinfo_text"
+            android:text="联系客服"/>
+
+        <ImageView
+            style="@style/setting_rightimage"
+            android:src="@drawable/icon_mine_arrow"/>
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_recommend"
+        style="@style/setting_item">
+
+        <TextView
+            android:id="@+id/txt_setting_recommend"
+            style="@style/myinfo_text"
+            android:text="精品推荐"/>
+
+        <ImageView
+            style="@style/setting_rightimage"
+            android:src="@drawable/icon_mine_arrow"/>
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_likekaws"
+        style="@style/setting_item">
+
+        <TextView
+            android:id="@+id/txt_setting_likekaws"
+            style="@style/myinfo_text"
+            android:text="给个5星好评吧"/>
+
+        <ImageView
+            style="@style/setting_rightimage"
+            android:src="@drawable/icon_mine_arrow"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_setting_currentversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="当前版本：-.-.-"
+            android:textColor="@color/tip_color"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_setting_exit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="17dp"
+        android:background="#fff"
+        android:text="退出登录"
+        android:textColor="@color/but_bg"
+        android:textSize="17sp"/>
+
+</LinearLayout>

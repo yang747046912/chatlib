@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tip_color">#666666</color>
+
+    <color name="text_gray1">#666666</color>
+    <color name="white">#FFFFFF</color>
+    <color name="line">#e7e7e7</color>
+    <color name="but_bg">#3fc5a5</color>
+    <color name="rb_text_color">#585858</color>
+</resources>
