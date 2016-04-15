@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:context="wyqj.cancerprevent.doctorversion.fragment.ConsultSquareFragment">
+
+    <include
+        android:id="@+id/ic_titlebar_patientlist"
+        layout="@layout/headview_patientlist"/>
+
+
+    <com.kaws.lib.xrecyclerview.XRecyclerView
+        android:id="@+id/xrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ic_titlebar_patientlist"/>
+
+    <com.kaws.lib.common.widget.BlankView
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ic_titlebar_patientlist"
+        android:visibility="gone"
+        app:text="还没有患者成为您的病人"/>
+
+
+</RelativeLayout>

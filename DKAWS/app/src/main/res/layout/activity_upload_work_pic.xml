@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context="wyqj.cancerprevent.doctorversion.activity.register.UploadWorkPicActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_uploadpic_addpic"
+                    android:layout_width="258dp"
+                    android:layout_height="258dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_uploadpic_addpic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_uploadpic_deletepic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/delete_uploadpic"
+                        android:visibility="invisible"
+                        />
+
+                </RelativeLayout>
+
+                <com.kaws.lib.common.widget.JustifyTextView
+                    android:id="@+id/iv_uploadpic_declare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_uploadpic_addpic"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginRight="31dp"
+                    android:layout_marginTop="30dp"
+                    android:text="请如图所示上传您的手持工牌的照片，并确保照片上的五官和工牌上的所有信息都清晰可见。"
+                    android:textColor="@color/tip_color"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_uploadpic_upload"
+                style="@style/btn_registerandlogin"
+                android:layout_below="@+id/iv_uploadpic_declare"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_check_way_selector"
+                android:text="其他审核方式"
+                android:textColor="@color/but_bg"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_uploadpic_jump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_uploadpic_upload"
+                android:layout_gravity="right"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="27dp"
+                android:text="暂时跳过"
+                android:textColor="@color/theme_color"
+                android:textSize="16sp"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

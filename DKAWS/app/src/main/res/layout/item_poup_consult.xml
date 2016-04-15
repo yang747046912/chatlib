@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_item_consult_popup"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp">
+
+    <TextView
+        android:id="@+id/tv_item_consult_popup"
+        style="@style/main_tab_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/choose_goodgrades_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="23dp"
+        android:text="最新提问"
+        android:singleLine="false"
+        android:textColor="@drawable/selector_item_consult_popup"
+        android:textSize="16sp"/>
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

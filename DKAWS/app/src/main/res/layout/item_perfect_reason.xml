@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/item_reason"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_perfect_reason"
+        android:text="reason"
+        android:button="@null"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/selector_choose_reason"
+        android:layout_height="wrap_content" />
+</LinearLayout>

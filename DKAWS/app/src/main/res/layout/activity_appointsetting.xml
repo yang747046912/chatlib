@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tip_chioce"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="开启预约"
+                    android:textColor="@color/main_content"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/image_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/selector_infonotice" />
+            </LinearLayout>
+
+            <View
+                style="@style/cutlint"
+                android:layout_marginLeft="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_appoint_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:background="#ffffff"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="预约价格"
+                    android:textColor="@color/main_content"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_need"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:text="(必填)"
+                    android:textColor="#ff7578"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/edit_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:gravity="right|center_vertical"
+                    android:hint="最低50元"
+                    android:paddingRight="3dp"
+                    android:textColorHint="@color/txt_hint_color"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/icon_mine_arrow"
+                    android:gravity="center_vertical"
+                    android:text="/15分钟"
+                    android:textColor="@color/text_mine_service"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/cutlint"
+                android:layout_marginLeft="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:background="#ffffff"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="接听电话"
+                    android:textColor="@color/main_content"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:text="(必填)"
+                    android:textColor="#ff7578"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:background="#ffffff"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/icon_mine_arrow"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入您的接听电话"
+                    android:textColorHint="@color/txt_hint_color"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#e0e0e0"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="时间设置"
+                android:textColor="@color/tips_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_year_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="14dp"
+                    android:text="2000.01"
+                    android:textColor="@color/theme_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_weekbtn"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/shape_week"
+                    android:gravity="center"
+                    android:text="下周"
+                    android:textColor="@color/theme_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View style="@style/cutlint" />
+
+            <com.kaws.lib.common.widget.MyGridView
+                android:id="@+id/gv_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:listSelector="#00ffffff"
+                android:paddingBottom="10dp"
+                android:numColumns="7" />
+
+            <com.kaws.lib.common.widget.MyGridView
+                android:id="@+id/gv_select_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#f8f8f8"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@null"
+                android:numColumns="2"
+                android:verticalSpacing="1dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/btn_add_time"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_confirm"
+            android:gravity="center"
+            android:text="增加时间"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/btn_clear_time"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_delete"
+            android:gravity="center"
+            android:text="清除时间"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

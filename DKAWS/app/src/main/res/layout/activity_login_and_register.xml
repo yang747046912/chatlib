@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_backgrand">
+
+
+        <LinearLayout
+            android:id="@+id/title_image"
+            android:layout_width="fill_parent"
+            android:layout_height="280dp"
+            android:background="@color/but_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/kaws_icon2x" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/iconwnzi2x" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_image"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_login_register_register"
+                style="@style/btn_registerandlogin"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_login_register_login"
+                style="@style/btn_registerandlogin"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_register_bg"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/main_content"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

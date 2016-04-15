@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:background="@color/white"
+    android:minHeight="58dp"
+    android:paddingLeft="17dp">
+
+    <TextView
+        android:id="@+id/tv_item_applyrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:text="XXX"
+        android:textColor="@color/but_bg"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl_arrow_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_apply_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="已同意"
+            android:textColor="@color/text_hint"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_mine_arrow" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/rl_arrow_apply"
+        android:layout_toRightOf="@+id/tv_item_applyrecord"
+        android:ellipsize="end"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:text="申请成为我的患者"
+        android:textColor="@color/text_common"
+        android:textSize="17sp" />
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

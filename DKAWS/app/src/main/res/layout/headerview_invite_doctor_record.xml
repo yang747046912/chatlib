@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀请总人数"
+                android:textColor="@color/tip_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_invited_doctors_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/but_bg"
+                android:textSize="36sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/cutline"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀请奖励总计"
+                android:textColor="@color/tip_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_got_contribution_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/but_bg"
+                android:textSize="36sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View style="@style/horizontal_line"/>
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_marginTop="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="医生昵称"
+            android:textColor="@color/bottomtext"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="认证成功时间"
+            android:textColor="@color/bottomtext"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="邀请奖励"
+            android:textColor="@color/bottomtext"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line"/>
+
+
+</LinearLayout>

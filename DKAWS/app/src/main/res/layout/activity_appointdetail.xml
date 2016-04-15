@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/activity_backgrand"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="基本资料"
+                android:paddingTop="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/tips_color"
+                android:paddingLeft="15dp"
+                android:layout_height="44dp" />
+            <LinearLayout
+                style="@style/appointdetail_ll"
+                >
+                <TextView
+                    style="@style/appointdetail_text1"
+                    android:text="患者姓名" />
+                <TextView
+                    android:id="@+id/text_patientname"
+                    style="@style/appointdetail_text2"
+                    android:text="name" />
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="16dp"
+                style="@style/cutlint"/>
+            <LinearLayout
+                style="@style/appointdetail_ll">
+                <TextView
+                    style="@style/appointdetail_text1"
+                    android:text="患病种类" />
+                <TextView
+                    android:id="@+id/text_categary"
+                    style="@style/appointdetail_text2"
+                    android:text="categary" />
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="16dp"
+                style="@style/cutlint"/>
+            <LinearLayout
+                style="@style/appointdetail_ll">
+                <TextView
+                    style="@style/appointdetail_text1"
+                    android:text="患者年龄" />
+                <TextView
+                    android:id="@+id/text_age"
+                    style="@style/appointdetail_text2"
+                    android:text="age" />
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="16dp"
+                style="@style/cutlint"/>
+            <LinearLayout
+                style="@style/appointdetail_ll">
+                <TextView
+                    style="@style/appointdetail_text1"
+                    android:text="患者性别" />
+                <TextView
+                    android:id="@+id/text_sex"
+                    style="@style/appointdetail_text2"
+                    android:text="sex" />
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="16dp"
+                style="@style/cutlint"/>
+            <LinearLayout
+                style="@style/appointdetail_ll">
+                <TextView
+                    style="@style/appointdetail_text1"
+                    android:text="确诊日期" />
+                <TextView
+                    android:id="@+id/text_sickdata"
+                    style="@style/appointdetail_text2"
+                    android:text="data" />
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="16dp"
+                style="@style/cutlint"/>
+            <LinearLayout
+                style="@style/appointdetail_ll">
+                <TextView
+                    style="@style/appointdetail_text1"
+                    android:text="接听人姓名" />
+                <TextView
+                    android:id="@+id/text_phonename"
+                    style="@style/appointdetail_text2"
+                    android:text="name" />
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="16dp"
+                style="@style/cutlint"/>
+            <LinearLayout
+                style="@style/appointdetail_ll">
+                <TextView
+                    style="@style/appointdetail_text1"
+                    android:text="与患者关系" />
+                <TextView
+                    android:id="@+id/text_relation"
+                    style="@style/appointdetail_text2"
+                    android:text="name" />
+
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="16dp"
+                style="@style/cutlint"/>
+            <LinearLayout
+                style="@style/appointdetail_ll">
+                <TextView
+                    style="@style/appointdetail_text1"
+                    android:text="预约时间" />
+                <TextView
+                    android:id="@+id/text_appointtime"
+                    style="@style/appointdetail_text2"
+                    android:text="data" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="病情描述"
+                android:paddingTop="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/tips_color"
+                android:paddingLeft="15dp"
+                android:layout_height="44dp" />
+            <TextView
+                android:text="请填写简要病情及咨询目的，以便大夫能及时了解。比如：所患疾病、目前症状、咨询目的、必要检查情况等，描述不得少于10个字"
+                android:layout_width="match_parent"
+                android:background="#f8f8f8"
+                android:padding="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/text_mine_service"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="44dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="上传图片"
+                    android:paddingTop="15dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/tips_color"
+                    android:paddingLeft="15dp"
+                    android:layout_height="44dp" />
+                <TextView
+                    android:id="@+id/notupload"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:text="未上传"
+                    android:paddingTop="15dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/tips_color"
+                    android:paddingLeft="15dp"
+                    android:layout_height="44dp" />
+            </LinearLayout>
+
+            <com.kaws.lib.common.widget.MyGridView
+                android:id="@+id/gv_detail_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:horizontalSpacing="4dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="4dp"
+                />
+            <View style="@style/cutlint"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_height="54dp">
+        <Button
+            android:id="@+id/accept"
+            android:text="接诊"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_confirm"
+            android:layout_height="44dp" />
+        <Button
+            android:id="@+id/supply"
+            android:layout_marginLeft="8dp"
+            android:text="需完善"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_confirm"
+            android:layout_height="44dp" />
+        <Button
+            android:id="@+id/reject"
+            android:layout_marginLeft="10dp"
+            android:text="拒诊"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/shape_confirm"
+            android:layout_height="44dp" />
+    </LinearLayout>
+</LinearLayout>

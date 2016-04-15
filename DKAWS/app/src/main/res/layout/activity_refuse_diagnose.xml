@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".activity.mobileconsult.RefuseDiagnoseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="拒绝原因："
+            android:textColor="@color/tips_color"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_refuse_diagnose_cause"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_refuse_cause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="未选择"
+                android:textColor="@color/main_content"
+                android:textColorHint="@color/text_hint"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_mine_arrow"
+                android:text="必填"
+                android:textColor="@color/sub_blue"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_refuse_detail_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="详细说明："
+            android:textColor="@color/tips_color"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_refuse_detail_cause"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="请注明您的拒诊原因。\n10-200字。"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/main_content"
+            android:textColorHint="@color/text_hint" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#f8f8f7"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_refuse_diagnose_submit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_confirm"
+            android:text="提交"
+            android:textColor="#fff"
+            android:textSize="17dp" />
+    </RelativeLayout>
+</RelativeLayout>

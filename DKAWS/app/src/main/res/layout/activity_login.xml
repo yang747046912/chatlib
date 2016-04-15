@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_backgrand"
+    tools:context="wyqj.cancerprevent.doctorversion.activity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_backgrand">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/title_register"
+                layout="@layout/title_login_bar" />
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_below="@+id/title_register"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/et_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/white"
+                android:drawablePadding="17dp"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号"
+                android:maxLength="11"
+                android:paddingLeft="17dp"
+                android:singleLine="true"
+                android:textColorHint="@color/text_hint"
+                android:textSize="17sp" />
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_below="@+id/et_login_username" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="49dp">
+
+                <EditText
+                    android:id="@+id/et_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="@color/white"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:paddingLeft="17dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_login_showpwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/et_login_password"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+
+                    android:button="@drawable/selector_showpwd" />
+
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_login_login"
+                style="@style/btn_registerandlogin"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="登录"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/tv_login_forgetpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:text="忘记密码？"
+                android:textColor="@color/edt_modifing"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

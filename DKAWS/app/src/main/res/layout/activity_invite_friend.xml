@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_bg"
+                tools:context="wyqj.cancerprevent.doctorversion.activity.mine.InviteFriendActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_invitefriend_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+        <!--头像-->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_invitefriend_touxiang"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <!--信息-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv_invitefriend_touxiang"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_invitefriend_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_common"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/tv_invitefriend_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_common"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_invitefriend_hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_invitefriend_name"
+                android:layout_below="@+id/tv_mine_grade"
+                android:textColor="@color/tip_color"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_invitefriend_office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_invitefriend_hospital"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/tv_invitefriend_hospital"
+                android:textColor="@color/tip_color"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_invitefriend_code"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_below="@+id/rl_invitefriend_myinfo"
+        android:background="#fff">
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_height="1px"/>
+
+        <TextView
+            android:id="@+id/tv_invitefriend_invitecodetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="专属邀请码"
+            android:textColor="@color/tip_color"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_invitefriend_invitecode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_invitefriend_invitecodetext"
+            android:layout_centerHorizontal="true"
+            android:text="------"
+            android:textColor="@color/but_bg"
+            android:textSize="40sp"/>
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_invitefriend_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_invitefriend_code"
+        android:layout_margin="15dp"
+        android:text="温馨提示："
+        android:textColor="@color/but_bg"
+        android:textSize="16sp"
+        />
+
+    <com.kaws.lib.common.widget.JustifyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_invitefriend_tip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:lineSpacingExtra="4dp"
+        android:paddingBottom="3dp"
+        android:text="@string/invitefriend_hinttext"
+        android:textColor="@color/tip_color"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/share_invite_friend"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:paddingLeft="15dp">
+
+            <View style="@style/horizontal_line"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="分享到"
+            android:textColor="#999999"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:paddingRight="15dp">
+
+            <View style="@style/horizontal_line"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_invite_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_invitefriend_share_friendcircle"
+            style="@style/invitefriend_share_btn"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/mine_invitefriend_friendcircle"
+            android:text="朋友圈"/>
+
+        <Button
+            android:id="@+id/btn_invitefriend_share_sina"
+            style="@style/invitefriend_share_btn"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/mine_invitefriend_sinaweibo"
+            android:text="微博"/>
+
+        <Button
+            android:id="@+id/btn_invitefriend_share_weixin"
+            style="@style/invitefriend_share_btn"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/mine_invitefriend_weixin"
+            android:text="微信"/>
+
+        <Button
+            android:id="@+id/btn_invitefriend_share_qqspace"
+            style="@style/invitefriend_share_btn"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/mine_invitefriend_qqspace"
+            android:text="QQ空间"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
